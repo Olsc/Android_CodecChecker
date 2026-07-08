@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  CodecChecker App Icon — Foreground Layer
+  Play triangle + waveform bars，代表视频编解码检测
+  108dp viewport，图形在 72dp 安全区内
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 播放键三角（视频/媒体） -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,34 L32,74 L62,54 Z" />
+
+    <!-- 波形柱：短（左） -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M72,45 L76,45 L76,63 L72,63 Z" />
+
+    <!-- 波形柱：长（中） -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M79,36 L83,36 L83,72 L79,72 Z" />
+
+    <!-- 波形柱：中（右） -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M86,41 L90,41 L90,67 L86,67 Z" />
+
+</vector>

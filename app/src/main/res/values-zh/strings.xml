@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">视频测压工具</string>
+    <string name="subtitle">设备视频编码与性能检测工具</string>
+    <string name="status_ready">点击「开始检测」启动测试</string>
+    <string name="status_collecting_device">[1/5] 正在收集设备信息…</string>
+    <string name="status_collecting_codec">[2/5] 正在查询编码器…</string>
+    <string name="status_checking_formats">[3/5] 正在检测格式支持…</string>
+    <string name="status_stress_test">[4/5] 正在压力测试…</string>
+    <string name="status_generating">[5/5] 正在生成报告…</string>
+    <string name="status_done">检测完成！向下滚动查看结果</string>
+    <string name="btn_start_test">▶ 开始检测</string>
+    <string name="btn_export">📤 导出报告</string>
+    <string name="section_device">1. 设备与 CPU 信息</string>
+    <string name="section_codec">2. 编码器概览</string>
+    <string name="section_formats">3. 格式支持</string>
+    <string name="section_perf">4. 解码器性能</string>
+    <string name="section_conclusion">5. 检测结论</string>
+    <string name="permission_title">存储权限申请</string>
+    <string name="permission_rationale">导出报告需要写入外部存储。若不授予权限，报告将仅可保存到应用内部存储。</string>
+    <string name="permission_grant">授予</string>
+    <string name="permission_skip">跳过</string>
+    <string name="permission_granted">权限已授予</string>
+    <string name="permission_denied">权限被拒绝</string>
+    <string name="manage_storage_title">所有文件管理权限</string>
+    <string name="manage_storage_message">如需通过系统文件管理器直接访问导出的报告，请前往设置界面开启「允许管理所有文件」权限。\n\n说明：不开启此权限仍可正常导出报告，其他应用（如文件管理器）可通过「下载」分类访问。</string>
+    <string name="manage_storage_goto">前往设置</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Video Stress Tool</string>
+    <string name="subtitle">Device Video Codec &amp; Performance Test Tool</string>
+    <string name="status_ready">Press Start Test to begin</string>
+    <string name="status_collecting_device">[1/5] Collecting device info…</string>
+    <string name="status_collecting_codec">[2/5] Querying codecs…</string>
+    <string name="status_checking_formats">[3/5] Checking format support…</string>
+    <string name="status_stress_test">[4/5] Stress testing…</string>
+    <string name="status_generating">[5/5] Generating report…</string>
+    <string name="status_done">Test complete! Scroll down to view results.</string>
+    <string name="btn_start_test">▶ Start Test</string>
+    <string name="btn_export">📤 Export Report</string>
+    <string name="section_device">1. Device &amp; CPU Info</string>
+    <string name="section_codec">2. Codec Summary</string>
+    <string name="section_formats">3. Format Support</string>
+    <string name="section_perf">4. Decoder Performance</string>
+    <string name="section_conclusion">5. Conclusion</string>
+    <string name="permission_title">Storage Permission Required</string>
+    <string name="permission_rationale">This app needs storage permission to export test reports to the device. Without it, reports can only be saved to app-internal storage.</string>
+    <string name="permission_grant">Grant</string>
+    <string name="permission_skip">Skip</string>
+    <string name="permission_granted">Permission granted</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="manage_storage_title">Full File Access</string>
+    <string name="manage_storage_message">For easy access to exported reports via file manager, please grant "Allow access to manage all files" permission in Settings.\n\nNote: Reports are still saved without this permission — other apps (Files by Google, etc.) can access them via the Downloads section.</string>
+    <string name="manage_storage_goto">Go to Settings</string>
+</resources>
