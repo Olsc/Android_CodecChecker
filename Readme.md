@@ -8,7 +8,7 @@
 [![Min SDK](https://img.shields.io/badge/minSdk-24-brightgreen)](app/build.gradle.kts)
 [![Target SDK](https://img.shields.io/badge/targetSdk-36-blue)](app/build.gradle.kts)
 [![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](#license)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue)](LICENSE)
 
 [中文版](./README.zh.md)
 
@@ -165,17 +165,29 @@ The HTML report features a custom dark theme with:
 ## License
 
 ```
-MIT License
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
 
-Copyright (c) 2026 OLSC
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions...
+   1. Definitions.
+      ...
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
 ```
+
+See the full [LICENSE](LICENSE) file for details.
 
 ---
 

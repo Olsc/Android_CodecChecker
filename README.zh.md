@@ -8,7 +8,7 @@
 [![Min SDK](https://img.shields.io/badge/minSdk-24-brightgreen)](app/build.gradle.kts)
 [![Target SDK](https://img.shields.io/badge/targetSdk-36-blue)](app/build.gradle.kts)
 [![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](#许可证)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue)](LICENSE)
 
 [English](./README.md)
 
@@ -165,15 +165,23 @@ HTML 报告采用自定义深色主题：
 ## 许可证
 
 ```
-MIT License
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
 
-版权所有 (c) 2026 OLSC
+根据 Apache 许可证 2.0 版（"许可证"）授权，
+除非遵守许可证，否则您不得使用此文件。
+您可在以下网址获取许可证副本：
 
-特此免费授予任何获得本软件及关联文档文件（以下简称"软件"）副本的人
-不受限制地处理本软件的权利，包括但不限于使用、复制、修改、合并、发布、
-分发、再许可和/或出售本软件副本的权利，并允许获得本软件的人在满足
-以下条件的情况下这样做...
+    http://www.apache.org/licenses/LICENSE-2.0
+
+除非适用法律要求或书面同意，否则按
+"原样"分发的软件不附带任何明示或暗示的
+担保或条件。请参阅许可证以了解
+管理权限和限制的具体语言。
 ```
+
+详见完整 [LICENSE](LICENSE) 文件。
 
 ---
 
