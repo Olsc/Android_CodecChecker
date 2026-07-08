@@ -244,7 +244,9 @@ object DecoderStressTester {
         return try {
             val codecList = MediaCodecList(MediaCodecList.ALL_CODECS)
             for (info in codecList.codecInfos) {
-                val nameOk = info.name == codecName || info.canonicalName == codecName
+                val nameOk = info.name == codecName || (
+                    Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q && info.canonicalName == codecName
+                )
                 if (nameOk) {
                     return try {
                         info.getCapabilitiesForType(mimeType)?.videoCapabilities

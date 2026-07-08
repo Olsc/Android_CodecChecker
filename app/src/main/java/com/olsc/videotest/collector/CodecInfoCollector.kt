@@ -85,7 +85,12 @@ object CodecInfoCollector {
             val supportedTypes: Array<String>
             try {
                 name = codecInfo.name
-                canonicalName = codecInfo.canonicalName
+                // canonicalName 需要 API 29+，老版本回退到 name
+                canonicalName = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                    codecInfo.canonicalName
+                } else {
+                    codecInfo.name
+                }
                 isEncoder = codecInfo.isEncoder
                 isHardware = isHardwareCodec(codecInfo)
                 supportedTypes = codecInfo.supportedTypes
@@ -181,7 +186,12 @@ object CodecInfoCollector {
 
     private fun isHardwareCodec(info: MediaCodecInfo): Boolean {
         val name = info.name.lowercase()
-        val alias = info.canonicalName.lowercase()
+        // canonicalName 需要 API 29+，老版本回退到 name
+        val alias = (if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            info.canonicalName
+        } else {
+            info.name
+        }).lowercase()
 
         // ========================================================
         // 明确判定为软件解码器
