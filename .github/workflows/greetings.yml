@@ -18,45 +18,54 @@ jobs:
           script: |
             const isIssue = context.payload.issue !== undefined;
             const isPR = context.payload.pull_request !== undefined;
+            const repo = context.repo;
 
             if (isIssue) {
+              const body = [
+                "Thank you for submitting your first issue to the **Android CodecChecker** project! :tada:",
+                "",
+                "Please provide detailed information about your issue, including device specifications and steps to reproduce.",
+                "",
+                "---",
+                "",
+                "感谢您向 **Android CodecChecker** 项目提交第一个问题！:tada:",
+                "请提供有关问题的详细信息，包括设备规格和重现步骤。",
+                "",
+                "---",
+                "",
+                "Merci d'avoir soumis votre premier problème au projet **Android CodecChecker** ! :tada:",
+                "Veuillez fournir des informations détaillées sur votre problème, y compris les spécifications de l'appareil et les étapes à reproduire."
+              ].join("\n");
+
               await github.rest.issues.createComment({
                 issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                body: `Thank you for submitting your first issue to the **Android CodecChecker** project! 🎉
-
-        Please provide detailed information about your issue, including device specifications and steps to reproduce.
-
-        ---
-
-        感谢您向 **Android CodecChecker** 项目提交第一个问题！🎉
-        请提供有关问题的详细信息，包括设备规格和重现步骤。
-
-        ---
-
-        Merci d'avoir soumis votre premier problème au projet **Android CodecChecker** ! 🎉
-        Veuillez fournir des informations détaillées sur votre problème, y compris les spécifications de l'appareil et les étapes à reproduire.`
+                owner: repo.owner,
+                repo: repo.repo,
+                body: body
               });
             }
 
             if (isPR) {
+              const body = [
+                "Thank you for making your first pull request to the **Android CodecChecker** project! :tada:",
+                "",
+                "We greatly appreciate your enthusiasm to contribute and will review this as soon as we can.",
+                "",
+                "---",
+                "",
+                "感谢您向 **Android CodecChecker** 项目提交第一个拉取请求！:tada:",
+                "我们非常感谢您的贡献热情，将尽快进行审核。",
+                "",
+                "---",
+                "",
+                "Merci d'avoir fait votre première pull request sur le projet **Android CodecChecker** ! :tada:",
+                "Nous apprécions grandement votre enthousiasme à contribuer et nous ferons une revue dès que possible."
+              ].join("\n");
+
               await github.rest.issues.createComment({
                 issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                body: `Thank you for making your first pull request to the **Android CodecChecker** project! 🎉
-
-        We greatly appreciate your enthusiasm to contribute and will review this as soon as we can.
-
-        ---
-
-        感谢您向 **Android CodecChecker** 项目提交第一个拉取请求！🎉
-        我们非常感谢您的贡献热情，将尽快进行审核。
-
-        ---
-
-        Merci d'avoir fait votre première pull request sur le projet **Android CodecChecker** ! 🎉
-        Nous apprécions grandement votre enthousiasme à contribuer et nous ferons une revue dès que possible.`
+                owner: repo.owner,
+                repo: repo.repo,
+                body: body
               });
             }
