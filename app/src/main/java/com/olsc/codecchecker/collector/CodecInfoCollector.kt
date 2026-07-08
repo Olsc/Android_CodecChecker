@@ -1,4 +1,4 @@
-package com.olsc.videotest.collector
+package com.olsc.codecchecker.collector
 
 import android.media.MediaCodecInfo
 import android.media.MediaCodecList

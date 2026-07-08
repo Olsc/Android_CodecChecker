@@ -1,4 +1,4 @@
-package com.olsc.videotest
+package com.olsc.codecchecker
 
 import android.app.AlertDialog
 import android.content.Intent
@@ -21,13 +21,13 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import com.olsc.videotest.collector.CodecInfoCollector
-import com.olsc.videotest.collector.DecoderStressTester
-import com.olsc.videotest.collector.DeviceInfoCollector
-import com.olsc.videotest.report.ReportGenerator
+import com.olsc.codecchecker.collector.CodecInfoCollector
+import com.olsc.codecchecker.collector.DecoderStressTester
+import com.olsc.codecchecker.collector.DeviceInfoCollector
+import com.olsc.codecchecker.report.ReportGenerator
 import kotlinx.coroutines.*
 
-class VideoTestActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var scrollView: ScrollView
     private lateinit var contentLayout: LinearLayout
@@ -444,13 +444,13 @@ class VideoTestActivity : AppCompatActivity() {
         val report = fullReport ?: return
         scope.launch(Dispatchers.IO) {
             try {
-                val path = ReportGenerator.exportReport(this@VideoTestActivity, report)
+                val path = ReportGenerator.exportReport(this@MainActivity, report)
                 withContext(Dispatchers.Main) {
-                    Toast.makeText(this@VideoTestActivity, "报告已导出到: $path", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@MainActivity, "报告已导出到: $path", Toast.LENGTH_LONG).show()
                 }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
-                    Toast.makeText(this@VideoTestActivity, "导出失败: ${e.message}", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@MainActivity, "导出失败: ${e.message}", Toast.LENGTH_LONG).show()
                 }
             }
         }

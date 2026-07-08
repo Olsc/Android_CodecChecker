@@ -22,6 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "videotest"
+rootProject.name = "codecchecker"
 include(":app")
  

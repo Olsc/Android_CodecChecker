@@ -2,7 +2,7 @@
 
 # 📱 Android CodecChecker
 
-**设备视频编解码能力检测工具 | Device Video Codec & Performance Test Tool**
+**Device Video Codec & Performance Test Tool**
 
 [![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android)](https://www.android.com)
 [![Min SDK](https://img.shields.io/badge/minSdk-24-brightgreen)](app/build.gradle.kts)
@@ -10,9 +10,7 @@
 [![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](#license)
 
----
-
-**English** · [中文](#项目简介)
+[中文版](./README.zh.md)
 
 </div>
 
@@ -86,16 +84,16 @@ Reports are saved to the device at:
 
 | # | Section | Content |
 |---|---------|---------|
-| 1 | 设备信息 | Manufacturer, model, hardware, Android/kernel version, fingerprint |
-| 2 | CPU 信息 | Architecture, cores, frequency, features, implementer |
-| 3 | 内存信息 | Total/available RAM, Swap |
-| 4 | 解码器总览 | HW/SW decoder/encoder counts |
-| 5 | 视频格式支持 | Known video MIME type support matrix |
-| 6 | 音频格式支持 | Known audio MIME type support matrix |
-| 7 | 硬件解码器详情 | Per-codec profiles, resolutions, color formats |
-| 8 | 解码性能测试 | Resolution capability matrix (1080p30→8K60) + init timing |
-| 9 | 并发解码能力 | Max concurrent H.264 & HEVC streams |
-| 10 | 检测结论 | Summary + comprehensive score + rating |
+| 1 | Device Info | Manufacturer, model, hardware, Android/kernel version, fingerprint |
+| 2 | CPU Info | Architecture, cores, frequency, features, implementer |
+| 3 | Memory Info | Total/available RAM, Swap |
+| 4 | Decoder Overview | HW/SW decoder/encoder counts |
+| 5 | Video Format Support | Known video MIME type support matrix |
+| 6 | Audio Format Support | Known audio MIME type support matrix |
+| 7 | HW Decoder Details | Per-codec profiles, resolutions, color formats |
+| 8 | Decoder Performance | Resolution capability matrix (1080p30→8K60) + init timing |
+| 9 | Concurrent Decoding | Max concurrent H.264 & HEVC streams |
+| 10 | Conclusion | Summary + comprehensive score + rating |
 
 ## Architecture
 
@@ -108,8 +106,8 @@ app/
     │   ├── values/strings.xml               # English strings
     │   ├── values-zh/strings.xml            # Chinese strings
     │   └── values/themes.xml                # Dark theme
-    └── java/com/olsc/videotest/
-        ├── VideoTestActivity.kt             # Main UI (pure code, no XML layout)
+    └── java/com/olsc/codecchecker/
+        ├── MainActivity.kt                  # Main UI (pure code, no XML layout)
         ├── collector/
         │   ├── DeviceInfoCollector.kt       # Device/CPU/memory info
         │   ├── CodecInfoCollector.kt        # Codec enumeration & classification

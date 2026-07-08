@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.olsc.videotest"
+    namespace = "com.olsc.codecchecker"
     compileSdk {
         version = release(37) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.olsc.videotest"
+        applicationId = "com.olsc.codecchecker"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

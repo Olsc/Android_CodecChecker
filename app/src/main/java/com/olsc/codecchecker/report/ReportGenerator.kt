@@ -1,4 +1,4 @@
-package com.olsc.videotest.report
+package com.olsc.codecchecker.report
 
 import android.content.ContentValues
 import android.content.Context
@@ -7,9 +7,9 @@ import android.os.Build
 import android.os.Environment
 import android.provider.MediaStore
 import android.util.Log
-import com.olsc.videotest.collector.CodecInfoCollector
-import com.olsc.videotest.collector.DecoderStressTester
-import com.olsc.videotest.collector.DeviceInfoCollector
+import com.olsc.codecchecker.collector.CodecInfoCollector
+import com.olsc.codecchecker.collector.DecoderStressTester
+import com.olsc.codecchecker.collector.DeviceInfoCollector
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date

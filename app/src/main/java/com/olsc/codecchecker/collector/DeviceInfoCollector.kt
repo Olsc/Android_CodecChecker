@@ -1,4 +1,4 @@
-package com.olsc.videotest.collector
+package com.olsc.codecchecker.collector
 
 import android.os.Build
 import java.io.BufferedReader

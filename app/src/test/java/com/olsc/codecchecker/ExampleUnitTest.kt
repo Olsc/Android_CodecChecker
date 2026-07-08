@@ -1,4 +1,4 @@
-package com.olsc.videotest
+package com.olsc.codecchecker
 
 import org.junit.Test
 
